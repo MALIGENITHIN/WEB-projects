@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malige Nithin | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6366f1;
+      --background: #f3f4f6;
+      --text-dark: #111827;
+      --text-light: #6b7280;
+      --white: #ffffff;
+      --gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* Banner */
+    .intro {
+      background: var(--gradient);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .intro span {
+      font-size: 1rem;
+      display: block;
+      margin-top: 10px;
+      color: #e0e7ff;
+    }
+
+    /* Profile */
+    .profile {
+      text-align: center;
+      margin-top: -30px;
+      padding: 20px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid var(--white);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile h1 {
+      margin-top: 15px;
+      font-size: 1.8rem;
+      color: var(--text-dark);
+    }
+
+    .profile p {
+      font-size: 1rem;
+      color: var(--text-light);
+    }
+
+    /* Navbar */
+    nav {
+      background-color: var(--white);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary-color);
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .section-box {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    p, ul {
+      font-size: 1.05rem;
+      color: var(--text-light);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      background-color: #e5e7eb;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        gap: 0.5rem;
+      }
+
+      .section-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro">
+    👋 Hi there! Welcome to my portfolio.
+    <span>I’m Malige Nithin, scroll down to know more about me!</span>
+  </div>
+
+  <div class="profile">
+    <h1>Malige Nithin</h1>
+    <p>Passionate Web Developer | Python & AI Enthusiast</p>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#strengths">Strengths</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="section-box">
+      <h2>About Me</h2>
+      <p>Hi, I’m <strong>Malige Nithin</strong> — a passionate and creative developer with a love for Python, AI, and building cool web apps. I enjoy turning ideas into code and love solving real-world problems through technology.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-box">
+      <h2>My Skills</h2>
+      <ul>
+        <li>✅ Python</li>
+        <li>✅ HTML & CSS</li>
+        <li>✅ JavaScript</li>
+        <li>✅ AI Concepts</li>
+        <li>✅ Responsive Web Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="strengths">
+    <div class="section-box">
+      <h2>My Strengths</h2>
+      <ul>
+        <li>💡 Quick Learner and Adaptive</li>
+        <li>🤝 Team Player & Communicator</li>
+        <li>🚀 Problem Solver</li>
+        <li>🔥 Self-Motivated & Consistent</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-box">
+      <h2>My Education</h2>
+      <ul>
+        <li>🎓Pursuing  B.Tech in Computer Science at Sri Indu Institute of Engineering and Technology</li>
+        <li>📘Completed Intermediate (MPC) - Karthikeya Junior College (2020 - 2022)</li>
+        <li>📚Completed SSC - Pudami Neighbourhood High School (2019 - 2020)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-box">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:nithinmalige@gmail.com">nithinmalige@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Malige Nithin</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">Malige Nithin</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Malige Nithin. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
